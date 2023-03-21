@@ -5,6 +5,11 @@
 // This file contains the JS functions for index.html
 
 function buttonOneClicked() {
-  alert("Hello, World!")
-  document.getElementById("answer").innerHTML = "The answer is: " + "insert answer here"
+  //Input through Textfields
+  const streetName = document.getElementById("street-name").value
+  const streetNumber = parseInt(document.getElementById("street-number").value)
+
+  //Output to text
+  document.getElementById("answer").innerHTML =
+    "Your address is: " + streetNumber + " " + streetName + "."
 }
